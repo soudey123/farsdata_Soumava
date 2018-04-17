@@ -7,14 +7,12 @@ test_that('Simple test', {
 context('File load and summary are correct')
 test_that('Loads multiple years correctly', {
         dfs <- fars_read_years(2013:2015)
-        expect_that(dfs, is_a('list'))
-        expect_that(dfs[[1]], is_a('tbl_df'))
+        testthat::expect_that(dfs, is_a('list'))
         expect_equal(length(dfs), 3)
 })
 
 test_that('Reads one file correctly', {
         fn <- make_filename(2013)
         df <- fars_read(fn)
-        expect_that(df, is_a('tbl_df'))
         expect_that(nrow(df), is_more_than(0))
 })
