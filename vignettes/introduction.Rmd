@@ -1,6 +1,6 @@
 ---
-title: "Introduction to farsdata Package"
-author: "Tyler Byers"
+title: "Farsdata data analysis package"
+author: "Soumavs Dey"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
