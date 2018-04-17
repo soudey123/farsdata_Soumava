@@ -12,7 +12,7 @@ test_that('Loads multiple years correctly', {
 })
 
 test_that('Reads one file correctly', {
-        fn <- make_filename(2013)
+        fn <- system.file("extdata", "accident_2013.csv.bz2", package = "farsdata")
         df <- fars_read(fn)
-        expect_that(nrow(df), is_more_than(0))
+        testthat::expect_that(nrow(df), is_more_than(0))
 })
