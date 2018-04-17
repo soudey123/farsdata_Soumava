@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523926507573.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "3955835470",
+    "id" : "EA5BD685",
+    "lastKnownWriteTime" : 1522289862,
+    "last_content_update" : 1522289862,
+    "path" : "C:/fars_package/farsdata/R/fars_functions.r",
+    "project_path" : "R/fars_functions.r",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
