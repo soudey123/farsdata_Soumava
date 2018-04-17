@@ -11,8 +11,10 @@ test_that('Loads multiple years correctly', {
         expect_equal(length(dfs), 3)
 })
 
-test_that('Reads one file correctly', {
-        fn <- system.file("extdata", "accident_2013.csv.bz2", package = "farsdata")
-        df <- fars_read(fn)
-        testthat::expect_that(nrow(df), is_more_than(0))
+test_that('FARS Summarize Years is correct', {
+  years <- 2013:2015
+  df <- fars_summarize_years(years)
+  expect_that(nrow(df), equals(12))
+  expect_that(ncol(df), equals(length(years) + 1))
+  expect_that(names(df)[1], matches('MONTH'))
 })
